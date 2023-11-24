@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>用户协议</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="e0c393c1-07a0-47cf-b057-f8ec2e9900c0" class="page sans"><header><h1 class="page-title">用户协议</h1><p class="page-description"></p></header><div class="page-body"><p id="2257bba5-0480-47b2-b8a5-b22d4fc2f3d8" class="">本协议于2023年03月15日起发布并生效，2023年03月15日最新修订。</p><p id="27e52838-032d-441e-8aed-daca3684df14" class="">
+</p><p id="8abc561f-802d-4225-8c4a-42599228c9c1" class="">【韩小多短剧app】系本软件的登记著作权人，依法享有本软件的著作权。本用户协议（以下简称“本协议”）是我们与用户（又称“您”）就客户端软件产品“韩小多短剧app”（以下简称“本软件”）的安装及使用等相关事项所订立的有效合约。您通过点击确认本协议或以其他方式选择接受本协议，即表示您已与我们达成协议并同意接受本协议的全部如下约定内容。</p><p id="ba776b23-392c-47d2-8808-f0140d2dc6be" class="">本协议一旦发生变动，本软件将会在软件页面上提示修改。修改后的使用协议一旦在显示在公告页上，即有效代替原来的协议。您应随时登录本软件查阅最新协议。您使用本软件提供的各项服务之前，应仔细阅读本协议，如您不同意本协议的修改，您可以主动取消本软件提供的服务，否则您的使用行为视为您接受本协议及随时修改的全部内容。</p><p id="777eeb0a-ede1-40c8-9ede-89088e3e119a" class="">一、请务必认真阅读和理解本协议中规定的所有权利和限制。您一旦安装、复制、下载、访问或以其它方式使用产品，将视为对本协议的接受，即表示您同意接受本协议各项条款的约束。您务必保证从指定的站点下载或使用本软件产品以及从合法发行的介质上获得本软件产品，否则因此导致可能的风险及损失，我们不承担任何责任。我们提示您，如果您未满18周岁，或者不具备完全民事行为能力，请在法定监护人的陪同下阅读本协议，并特别注意有关未成年人使用本服务的条款。否则对于由此带来的后续注册、使用本服务、付费充值等行为而对您发生的不利后果，除法律有明确规定外，我们不承担任何责任，且我们有权在知晓该等情况后解除双方间的用户协议。</p><p id="d7072df7-37ad-432a-b9dc-2e50cda94156" class="">二、权利声明</p><p id="c9e35572-1e9b-4d57-9f75-d4b900100cd4" class="">1、【韩小多短剧app】系本软件的登记著作权人，依法享有本软件的著作权。</p><p id="31d140bd-6093-4f16-ae7c-afa8f8ab00f3" class="">2、未经“韩小多短剧app”登记著作权人的书面同意，用户不得以任何营利性或非营利性的目的自行实施、利用、转让或许可任何第三方实施、利用、转让上述软件著作权等知识产权，本软件登记著作权人保留追究上述未经许可行为的权利。</p><p id="f6a5d299-828c-437e-ad7b-f0dff1244382" class="">3、禁止反向工程、反向编译和反向汇编：用户不得对本软件产品进行反向工程（Reverse Engineer）、反向编译（Decompile）或反向汇编（Disassemble），同时不得改动编译在程序文件内部的任何资源。除法律、法规明文规定允许上述活动外，用户必须遵守本协议限制。</p><p id="609ae21d-c693-41f9-b5ab-e6c98de333b1" class="">4、组件分割：本软件产品是作为一个整体产品而被授予许可使用,用户不得将各个部分分开用于任何目的。</p><p id="b355e1af-e584-4d55-9b56-b4a84b1c5be8" class="">5、个别授权：如需进行商业性的销售、复制、分发，包括但不限于软件销售、预装、捆绑等，必须获得软件著作权人的另行书面授权和许可。</p><p id="e40301f8-7e70-470e-8b54-b33a1d547ec0" class="">6、保留权利：本协议未明示授权的其他一切权利仍归我们所有，用户使用其他权利时必须获得我们的书面同意。</p><p id="1cafcff9-70c1-4271-a281-c0dfcf1bb54a" class="">7、本软件提供的视频内容仅代表作者自己的立场和观点，与软件登记著作权人无关，由作者本人承担一切法律责任。</p><p id="b6138e39-8733-453d-9d65-999f81d036d5" class="">三、用户使用须知</p><p id="817c65b8-2e9b-40c5-b02c-be680aac35cb" class="">1、软件功能：查找、观看短剧；充值、下载、购买短剧；观看、保存观看进度。</p><p id="63b20acb-2728-4122-8861-cf2e099f61a4" class="">2、关于数字内容的付费：用户付费产生的全部收入在扣除第三方支付机构等按规定收取的手续费后最终由“韩小多短剧app”收取。本软件内数字内容由免费内容和收费内容组成，免费内容分为限时免费内容和永久免费内容。我们有权决定所提供服务的标准和收费方式，并在相关服务页面对资费标准作出提示，用户有权选择是否支付相应费用以继续使用本软件提供的收费服务。如您为未满18周岁的未成年人（特别是不满14周岁的未成年人），应在法定监护人的同意后进行充值。用户在本软件充值后获得对应的看点，用户可使用看点购买本软件提供的付费服务。您同意本协议视为您同意我们为您的付费服务开启自动购买下一集内容和批量购买剧集内容的授权。用户一旦充值成功（包括未成年人在监护人同意后充值成功后），不得以非法理由要求退还全部或部分已充值款项，但因不可抗力、协议约定或者相关法律有明确规定的情况下除外。</p><p id="b6b5f2d2-3e27-4576-b9b7-c6384e426942" class="">3、软件的修改和升级：本软件著作权人保留随时为用户提供本软件的修改、升级版本的权利。由用户选择确定后，软件会进行升级更新，使用运营商网络产生相应的数据流量费，由运营商收取。</p><p id="831e4b0a-3b5b-400d-bf99-672f1704509c" class="">4、用户应在遵守法律及本协议的前提下使用本软件。用户无权实施包括但不限于下列行为:</p><p id="e3fc9ad6-c623-407b-a68f-a949783f5161" class="">（1）删除或者改变本软件上的所有权利管理电子信息；</p><p id="a0a79727-20b4-4c7c-944b-491671750a8f" class="">（2）故意避开或者破坏著作权人为保护本软件著作权而采取的技术保护措施；</p><p id="6d142061-b215-4751-a536-d9da0d3f25c9" class="">（3）利用本软件误导、欺骗他人；</p><p id="3ace8e05-ae2c-4511-9b39-b396ccc7c9b9" class="">（4）违反国家规定，对计算机信息系统功能进行删除、修改、增加、干扰，造成计算机信息系统不能正常运行；</p><p id="ba37552a-a231-4f33-a046-d46e099abd5e" class="">（5）未经允许，进入计算机信息网络或者使用计算机信息网络资源；</p><p id="24697772-c1ae-4fea-a15a-422d2c5d1c93" class="">（6）未经允许，对计算机信息网络功能进行删除、修改或者增加；</p><p id="d8d00dc2-c666-41eb-8a64-9adffa622c07" class="">（7）未经允许，对计算机信息网络中存储、处理或者传输的数据和应用程序进行删除、渗透、修改或者增加；</p><p id="c398e8e0-bf6d-427e-883d-f9225a3b1d02" class="">（8）破坏本软件系统或网站的正常运行，故意传播计算机病毒等破坏性程序；</p><p id="200b6555-7373-459a-9386-d1e7513a6718" class="">（9）其他任何危害计算机信息网络安全的行为；</p><p id="414be896-e4df-4849-a1f6-d305d06f5faa" class="">（10）其他非正常目的使用行为。</p><p id="8b17852f-4715-496f-b55f-4321c9b4747b" class="">5、对于从非指定站点下载的本软件产品以及从非法发行的介质上获得的本软件产品，我们无法保证该软件是否感染计算机病毒、是否隐藏有伪装的木马程序或者黑客软件，用户使用此类软件，将可能导致不可预测的风险，建议用户不要轻易下载、安装、使用，本软件登记著作权人不承担任何由此产生的法律责任。</p><p id="c32c5a16-0212-485d-9ce4-d18d3b200c07" class="">6、隐私权保护</p><p id="0685312a-f288-468d-b400-f3894120532e" class="">我们承诺遵守《隐私政策》（又称“隐私协议”）以及适用法律的规定并制定了以下四项隐私权保护原则，指导我们如何来处理产品中涉及到用户隐私权和用户信息等方面的问题：</p><p id="4eee7c05-9083-4c42-8039-76e5bbe122a6" class="">（1）我们收集您的信息前，会明确告知您收集信息的方式、范围和信息使用的目的并征得您的同意。我们利用我们收集的信息仅限为用户提供有价值的产品和服务。我们决不超范围、超频次搜集您的个人信息，如通讯录、位置、身份证、人脸等信息，决不搜集与本软件服务非必需或无合理应用场景的信息；</p><p id="4599dc89-cf3f-4baf-9887-82416a61a6d3" class="">（2）开发符合隐私权标准和隐私权惯例的产品。未经用户同意，决不与其他应用软件共享、使用用户个人信息，如设备识别信息、商品浏览记录、搜索使用习惯、常用软件应用列表等。在未向用户告知或未以显著方式标示的情况下，决不将收集到的用户搜索、浏览记录、使用习惯等个人信息用于定向推送或精准营销，且不向用户提供关闭该功能的选项；</p><p id="953b755a-aa49-4e94-a90b-430e0eb96e3b" class="">（3）将个人信息的收集透明化；</p><p id="2a8e232c-8edf-41da-90c0-d5faccb5c094" class="">（4）尽最大的努力保护我们掌握的用户信息。</p><p id="d8f1d864-6d06-4207-8d04-ae59b8ab2167" class="">基于此，您同意授权我们使用您的用户头像和昵称，使得我们更好为您服务。</p><p id="8c5b5c8c-d49f-4f2e-8bef-cb5955392ba3" class="">7、用户成为VIP会员后，在会员有效期内，您可以观看本平台全部短剧内容。</p><p id="8ced4eea-304c-4b47-bca7-249230a6b9dd" class="">8、本软件安装和运行过程中，我们决不向用户索取与在用户当前使用服务场景无关的权限。而且在用户明确拒绝权限申请后，决不频繁申请开启用户通讯录、定位、短信、录音、相机等与当前服务场景无关的权限以迫使用户同意与本软件无关权限的开启。用户未使用相关功能或服务时，决不提前申请开启用户通讯录、定位、短信、录音、相机等权限，或超出本软件产品业务功能或服务外，向用户申请开启通讯录、定位、短信、录音、相机等权限。剪贴板权限仅用于用户自行选择复制客服电话的场景，如用户没有选择复制，我们绝不向用户申请开启剪贴板权限。</p><p id="1074e526-268c-428d-afb7-3700b47a2cc1" class="">9、用户有权注销个人账户信息，用户注销个人账户信息后，我们将删除用户在本软件存储的个人账户信息（详见注销有关通知）。</p><p id="e6deed75-d0d7-4ce4-aab1-52c727920941" class="">10、当您重装手机系统或清理手机应用软件时，您的全部用户信息将会丢失，这些用户信息包括但不限于：个人账户信息、查找或浏览剧集的记录、已经下载或购买的剧集、观看记录、观看进度、会员权益，与此同时您个人账户中的看点也将全部清零。您已知晓这一点是由产品的特性决定的，但您可以通过将个人账户关联手机号码的方式避免在重装手机系统或清理手机应用软件时丢失您的相关用户信息。当您未能将个人账户关联手机号码时，一旦发生用户信息丢失的情况，本软件著作权人将不因此承担任何责任。</p><p id="a14c5e62-9de2-4ebc-a834-f5c03cda4043" class="">11、您不得在本软件平台或利用本软件平台的系统漏洞、程序缺陷、人工操作失误等以任何方式从事非法活动或进行非正常消费，您不得使用恶意软件等其他任何手段破坏本软件平台的正常经营，您不得从事任何违反诚实信用原则的活动，否则您一经被本软件平台认定具有前述行为，我们有权在无需事先通知您的情况下直接冻结、注销您的账户且不予返还账户余额，由此产生的一切损失全部由您承担。此外，我们仍保留依法追究您法律责任的权利，如您的行为给我们带来损失，您应当赔偿给我们造成的全部损失，如您涉嫌犯罪的，我们有权将有关线索移交司法部门处理。</p><ol type="1" id="4ff847af-902f-4c86-b229-3def1568d60b" class="numbered-list" start="1"><li>我们非常重视对未成年人个人信息及合法权益的保护，并积极促进未成年人的健康成长。未经父母(监护人)陪同且同意的未成年人（尤其是不满十四周岁的未成年人）使用本协议项下的服务，父母(监护人)一经发现，应及时通知我们，我们会协助父母(监护人)处理该未成年人的注册账户、账号，以确保父母(监护人)的监护责任和义务得以实现。</li></ol><p id="ba9a4b5a-0b08-4082-93a8-6165660c48cc" class="">四、对用户和第三方的知识产权的保护</p><p id="46637334-debc-47f7-987d-0146dead48e3" class="">1、用户在使用本软件所含服务过程中，可能需要通过发表评论等各种方式向我们提供内容，用户在本软件上发表的全部原创内容，著作权均归用户本人所有。用户发表的评论仅代表用户观点，与本软件登记著作权人和我们无关。</p><p id="809676c9-16d5-4943-a40d-cc716500b326" class="">2、用户不能侵犯包括他人的著作权在内的知识产权以及其他权利。一旦由于用户发表的任何内容发生法律纠纷，其责任由用户本人承担。</p><p id="3c1aeeb1-0aed-4641-b9cf-ab6668954e4a" class="">3、对于用户发表到本软件上的任何内容，用户同意授权我们在全球范围内具有免费的、永久的、非独家的全部著作权使用权，用户许可我们有权利就任何主体侵权而单独采取法律行动（包括但不限于诉讼、举报、出具律师函等形式）。</p><p id="67994ec5-c4e6-45b9-8d74-8254fd4c0bce" class="">4、如用户的言论侵犯了第三方的著作权或其他权利或违反法律规定的，经第三方提出异议或通过内容审查流程发现后，我们有权删除相关的内容，且有权追究或者协助第三方追究用户的法律责任。</p><p id="fd6ddda7-e425-4f6d-b2a3-3c5aea27b176" class="">5、未经我们书面许可，任何主体禁止使用任何爬虫程序、蜘蛛程序、拟人程序、渗透技术、黑客程序以及其他自动设备，或手动程序来入侵、读取、复制、存储本软件或其所包含的任何内容或从事任何非法或违反诚实信用原则的活动。否则，我们有权在无需通知您的情况下直接冻结、注销您的账户且有权不予返还账户余额，由此产生的全部损失由您单方承担。此外我们仍有权追究您的法律责任以弥补因您的上述行为而给我们造成的全部损失，以切实维护点我们的合法权利。</p><p id="d49b7ace-5b5c-4297-8cec-ab6dadae2f02" class="">五、内容版权声明</p><p id="402f61ba-ce20-482f-ab00-1f66d1ae3adb" class="">韩小多短剧app承诺遵守并尊重中国现行法律法规及其他规范性文件对著作权人的保护。作为权利人，当您发现提供的内容侵犯了您的合法权益时，您应当按照处理流程首先向我们发送“权利通知”至hanxiaoduoduanjv@163.com，我们将根据中国法律法规和政府规范性文件采取措施移除相关内容或断开、屏蔽相关链接，经采取前述措施后，您不得追究我们和本软件登记著作权人的任何法律责任。</p><p id="873080d6-a57a-404e-9606-10692012f3ec" class="">六、免责及责任的限制</p><p id="2284e433-ba20-481f-9c73-cabdcd4a39f1" class="">1、用户确认，其知悉本软件所有功能及为实现本软件各功能所进行的必要操作，其根据自身需求自愿选择使用本软件及相关服务，因使用本软件及相关服务所存在的风险和一切后果将完全由您依法自行承担，本软件登记著作权人不承担任何责任。</p><p id="a68391c7-311e-4484-82f9-551f9cfb905d" class="">2、本软件经过详细的测试，但不能保证与所有的软硬件系统完全兼容，不能保证本软件完全没有错误。如果出现不兼容及软件错误的情况，用户可拨打客服电话 400-118-0066将情况报告，获得技术支持。如果无法解决兼容性问题，用户可以删除本软件。</p><p id="b3978f6a-54ca-4a16-996a-96d67126e3f4" class="">3、在适用法律允许的最大范围内，对您因使用或不能使用本软件所产生的损害及风险，包括但不限于直接或间接的个人损害、商业赢利的丧失、贸易中断、商业信息的丢失或任何其它经济损失，本软件登记著作权人不承担任何责任。</p><p id="d9247386-61ca-433b-86c6-86c0ba1f74c8" class="">4、对于因电信系统或互联网网络故障、手机故障或病毒程序运营导致的信息损坏或丢失、手机系统问题或其它任何不可抗力原因而产生损失，本软件登记著作权人不承担任何责任。</p><p id="ee15a322-da08-43c0-93b3-c8e4f52f3cb2" class="">5、用户违反本协议规定，对本软件登记著作权人造成损害的，我们有权采取包括但不限于中断用户使用许可、停止提供服务、限制使用、追究法律责任等措施。</p><p id="f5c585e3-6be5-45b4-b472-e4ab495206de" class="">七、法律及争议解决</p><p id="4e728fca-5bbd-4a33-bf70-caa7c295a4eb" class="">1、本协议适用中华人民共和国法律。</p><p id="d69fcc1e-33e7-4da6-ac68-3e972138eb9d" class="">2、因本协议引起的或与本协议有关的任何争议，各方应友好协商解决；协商不成的，任何一方均有权向北京仲裁委员会仲裁解决。</p><p id="1223d987-9e36-4b8f-b53a-53b17f2c1449" class="">八、其他条款</p><p id="6bc71c79-7310-4454-ad4e-bb36854d6543" class="">1、如果本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，或违反任何适用的法律，则该条款被视为删除，但本协议的其余条款仍应有效并且有约束力。</p><p id="d25e9839-a122-45b6-8d1e-b43ade4e0298" class="">2、我们有权随时根据有关法律、法规的变化以及公司经营状况和经营策略的调整等修改本协议。修改后的协议会在网站上公布，并随附于新版本软件。当发生有关争议时，以最新的协议文本为准。如果不同意改动的内容，用户可以自行删除本软件。如果用户继续使用本软件，则视为您接受本协议的变动。</p><p id="2760f849-e82e-4df8-b4b6-d84cf5f8bc82" class="">3、在法律允许的最大范围内我们对本协议拥有解释权与修改权。</p><p id="31df68b4-ad0c-49e0-87b0-4f2c1207b619" class="">4、感谢您使用本软件，任何时候如果您对我们的声明内容有疑问，请联系我们：hanxiaoduoduanjv@163.com。</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
